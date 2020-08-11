@@ -12,6 +12,10 @@
     <Compile Remove="Migrations\20200811200548_muscle_model_added.Designer.cs" />
     <Compile Remove="Migrations\20200811201134_muscle_column_name_added.cs" />
     <Compile Remove="Migrations\20200811201134_muscle_column_name_added.Designer.cs" />
+    <Compile Remove="Migrations\20200811203737_workout_model_added.cs" />
+    <Compile Remove="Migrations\20200811203737_workout_model_added.Designer.cs" />
+    <Compile Remove="Migrations\20200811203831_user_model_added.cs" />
+    <Compile Remove="Migrations\20200811203831_user_model_added.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
