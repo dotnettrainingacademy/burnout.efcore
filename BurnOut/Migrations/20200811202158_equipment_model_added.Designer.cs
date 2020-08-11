@@ -3,14 +3,16 @@ using BurnOut.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BurnOut.Migrations
 {
     [DbContext(typeof(FitDbContext))]
-    partial class FitDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200811202158_equipment_model_added")]
+    partial class equipment_model_added
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

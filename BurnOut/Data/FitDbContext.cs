@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BurnOut.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -27,5 +28,7 @@ namespace BurnOut.Data
 
         // Entities => Tables
         public DbSet<Muscle> Muscles { get; set; }
+
+        public DbSet<Equipment> Equipments { get; set; }
     }
 }
