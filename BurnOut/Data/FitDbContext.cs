@@ -26,5 +26,6 @@ namespace BurnOut.Data
         }
 
         // Entities => Tables
+        public DbSet<Muscle> Muscles { get; set; }
     }
 }
