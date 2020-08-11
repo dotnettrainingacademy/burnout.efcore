@@ -3,14 +3,16 @@ using BurnOut.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BurnOut.Migrations
 {
     [DbContext(typeof(FitDbContext))]
-    partial class FitDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200811205203_all_model_schema_name_modified")]
+    partial class all_model_schema_name_modified
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -81,26 +83,6 @@ namespace BurnOut.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Muscles","burnOut");
-                });
-
-            modelBuilder.Entity("BurnOut.Data.Models.SocialInfo", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Facebook_URL")
-                        .HasColumnName("FaceBook_Profile_URL")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Instagram_URL")
-                        .HasColumnName("Instagram_Profile_URL")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SocialNetworkInfo","burnOut");
                 });
 
             modelBuilder.Entity("BurnOut.Data.Models.User", b =>

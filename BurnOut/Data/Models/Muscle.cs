@@ -6,6 +6,7 @@ using System.Text;
 
 namespace BurnOut.Data.Models
 {
+    [Table("Muscles", Schema = "burnOut")]
     class Muscle
     {
         // Primary Key

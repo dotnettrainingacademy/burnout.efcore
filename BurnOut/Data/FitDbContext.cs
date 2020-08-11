@@ -23,7 +23,7 @@ namespace BurnOut.Data
         // Configuring or Building Tables
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+                // Fluent API
         }
 
         // Entities => Tables
@@ -34,5 +34,6 @@ namespace BurnOut.Data
         public DbSet<Excercise> Excercises { get; set; }
         public DbSet<Workout> Workouts { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<SocialInfo> SocialInfos { get; set; }
     }
 }

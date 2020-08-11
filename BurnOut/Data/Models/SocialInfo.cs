@@ -6,14 +6,16 @@ using System.Text;
 
 namespace BurnOut.Data.Models
 {
-    [Table("Equipment", Schema = "burnOut")]
-    class Equipment
+    [Table("SocialNetworkInfo", Schema = "burnOut")]
+    class SocialInfo
     {
         [Key]
         public int Id { get; set; }
 
-        [Required]
-        public string EquipmentName { get; set; }
-        public int EquipmentWeight { get; set; }
+        [Column("FaceBook_Profile_URL")]
+        public string Facebook_URL { get; set; }
+
+        [Column("Instagram_Profile_URL")]
+        public string Instagram_URL { get; set; }
     }
 }
