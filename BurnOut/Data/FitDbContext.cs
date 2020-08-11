@@ -30,5 +30,7 @@ namespace BurnOut.Data
         public DbSet<Muscle> Muscles { get; set; }
 
         public DbSet<Equipment> Equipments { get; set; }
+
+        public DbSet<Excercise> Excercises { get; set; }
     }
 }
